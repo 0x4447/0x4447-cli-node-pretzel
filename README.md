@@ -111,7 +111,7 @@ console.info(bad);
 ```
 # Rules
 
-Bellow you can find a list of all the rules support by the module at this time.
+Below you can find a list of all the rules support by the module at this time.
 
 ### Bigger then
 
