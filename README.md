@@ -1,10 +1,10 @@
 # 🥨 Pretzel
 
-Pretzel is a recursive JSON data validation, created after realizing that there are no npm modules that can recursively validate a JSON object with multiple nested values objects.
+We created our Pretzel recursive JSON data validation after realizing that there were no npm modules that could recursively validate a JSON object with multiple nested values objects.
 
-We are aware of Validate.js, but as the author explains, the [support for complete object is very basic](https://validatejs.org/#validate-nested). We did consider proposing a PR to the project, but the source code turned out to be to hard to rezone about, and thus Pretzel was born.
+We are aware of Validate.js, but as the author explains, the [support for complete object is very basic](https://validatejs.org/#validate-nested). We did consider proposing a PR to the project, but the source code turned out to be too hard to rezone about. Thus, Pretzel was born.
 
-The goal of this tools is not only to handle nested JSON files like this:
+The goal of this tool is not just to handle nested JSON files like this...
 
 ```javascript
 {
@@ -20,7 +20,7 @@ The goal of this tools is not only to handle nested JSON files like this:
 }
 ```
 
-With rules structured this way:
+...with rules structured this way:
 
 ```javascript
 {
@@ -50,7 +50,7 @@ With rules structured this way:
 }
 ```
 
-We also wanted to make the source code as simple to understand as possible. If you check the `index.js` file you'll see what we mean – use it, modify it, learn from it.
+We also wanted to make the source code as simple to understand as possible. If you check the `index.js` file, you'll see what we mean. Use it, modify it, learn from it.
 
 # How to Install
 
@@ -114,21 +114,21 @@ console.info(bad);
 ```
 # Rules
 
-Below you can find a list of all the rules support by the module at this time.
+Below is a list of all the rules the module supports at this time.
 
-### Bigger then
+### Bigger than
 
 ```javascript
 {
-	biggerThen: 5
+	biggerThan: 5
 }
 ```
 
-### Smaller then
+### Smaller than
 
 ```javascript
 {
-	smallerThen: 5
+	smallerThan: 5
 }
 ```
 
@@ -170,4 +170,4 @@ If you enjoyed this project, please consider giving it a 🌟. And check out our
 
 ## Sponsor 🎊
 
-This project is brought to you by 0x4447 LLC, a software company specializing in build custom solutions on top of AWS. Find out more by following this link: https://0x4447.com or, say [hello@0x4447.email](mailto:hello@0x4447.email?Subject=Hello%20From%20Repo&Body=Hi%2C%0A%0AMy%20name%20is%20NAME%2C%20and%20I%27d%20like%20to%20get%20in%20touch%20with%20someone%20at%200x4447.%0A%0AI%27d%20like%20to%20discuss%20the%20following%20topics%3A%0A%0A-%20LIST_OF_TOPICS_TO_DISCUSS%0A%0ASome%20useful%20information%3A%0A%0A-%20My%20full%20name%20is%3A%20FIRST_NAME%20LAST_NAME%0A-%20My%20time%20zone%20is%3A%20TIME_ZONE%0A-%20My%20working%20hours%20are%20from%3A%20TIME%20till%20TIME%0A-%20My%20company%20name%20is%3A%20COMPANY%20NAME%0A-%20My%20company%20website%20is%3A%20https%3A%2F%2F%0A%0ABest%20regards.).
+This project is brought to you by 0x4447 LLC, a software company specializing in building custom solutions on top of AWS. Find out more by following this link: https://0x4447.com, or say [hello@0x4447.email](mailto:hello@0x4447.email?Subject=Hello%20From%20Repo&Body=Hi%2C%0A%0AMy%20name%20is%20NAME%2C%20and%20I%27d%20like%20to%20get%20in%20touch%20with%20someone%20at%200x4447.%0A%0AI%27d%20like%20to%20discuss%20the%20following%20topics%3A%0A%0A-%20LIST_OF_TOPICS_TO_DISCUSS%0A%0ASome%20useful%20information%3A%0A%0A-%20My%20full%20name%20is%3A%20FIRST_NAME%20LAST_NAME%0A-%20My%20time%20zone%20is%3A%20TIME_ZONE%0A-%20My%20working%20hours%20are%20from%3A%20TIME%20till%20TIME%0A-%20My%20company%20name%20is%3A%20COMPANY%20NAME%0A-%20My%20company%20website%20is%3A%20https%3A%2F%2F%0A%0ABest%20regards.).
