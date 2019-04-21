@@ -73,6 +73,7 @@ let pretzel = require('pretzel');
 # How to Use
 
 ```javascript
+
 let pretzel = require('pretzel');
 
 //
@@ -123,6 +124,14 @@ Below you can find a list of all the rules support by the module at this time.
 }
 ```
 
+### Smaller then
+
+```javascript
+{
+	smallerThen: 5
+}
+```
+
 ### Comparison
 
 ```javascript
@@ -147,15 +156,7 @@ Below you can find a list of all the rules support by the module at this time.
 }
 ```
 
-### Smaller then
-
-```javascript
-{
-	smallerThen: 5
-}
-```
-
-### Type
+### Types
 
 ```javascript
 {
