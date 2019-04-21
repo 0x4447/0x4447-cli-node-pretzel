@@ -77,6 +77,11 @@ let main = function(data, test, error)
 		}
 	}
 
+	//
+	//	->	Return the result of our validation. Either an empty array
+	//		if no errors were found, or a list of objects pointing out
+	//		which variable didn't pass the test.
+	//
 	return error_result;
 };
 

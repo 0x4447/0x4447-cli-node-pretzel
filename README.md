@@ -50,7 +50,7 @@ With rules structured this way:
 }
 ```
 
-We also wanted to make sure the source code is a simple to understand as possible. If you check the `index.js` file you'll see what we mean – use it, modify it, learn from it.
+We also wanted to make the source code as simple to understand as possible. If you check the `index.js` file you'll see what we mean – use it, modify it, learn from it.
 
 # How to Install
 
@@ -73,6 +73,8 @@ let pretzel = require('pretzel');
 # How to Use
 
 ```javascript
+let pretzel = require('pretzel');
+
 //
 //	RULES
 //
@@ -97,13 +99,13 @@ let bad_data = {
 };
 
 //
-//	1.	Execute on the function.
+//	1.	Execute validation.
 //
 let good = pretzel(good_data, rules);
 let bad = pretzel(bad_data, rules);
 
 //
-//	2.	Check what we've got.
+//	2.	Check the validation result.
 //
 console.info(good);
 console.info(bad);
