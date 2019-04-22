@@ -5,8 +5,8 @@ let master_obj = {
 	type,
 	length,
 	regexp,
-	biggerThen,
-	smallerThen,
+	biggerThan,
+	smallerThan,
 	includes,
 	comparison
 };
@@ -127,7 +127,7 @@ function length(data, test)
 //
 //	Test if a number is bigger then the test
 //
-function biggerThen(data, test)
+function biggerThan(data, test)
 {
 	if(data > test)
 	{
@@ -140,7 +140,7 @@ function biggerThen(data, test)
 //
 //	Test if a number is smaller then the test
 //
-function smallerThen(data, test)
+function smallerThan(data, test)
 {
 	if(data < test)
 	{
