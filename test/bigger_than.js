@@ -6,7 +6,7 @@ let expect = require('chai').expect;
 //
 let rules = {
 	nr: {
-		biggerThen: 5
+		biggerThan: 5
 	}
 };
 
