@@ -1,6 +1,6 @@
 {
   "name": "@0x4447/pretzel",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "🥨 Recursive JSON data validation.",
   "homepage": "https://0x4447.com/toolbox",
   "main": "index.js",
