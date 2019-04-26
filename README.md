@@ -8,14 +8,32 @@ The goal of this tool is not just to handle nested JSON files like this...
 
 ```javascript
 {
-	first_name: 'David',
-	last_name: 'Gatti',
-	age: 99,
-	address: {
-		street: 'Wonder Land',
-		nr: 55,
-		state: 'TX',
-		country: 'United States'
+	"company_name": "0x4447",
+	"address": {
+		"street": "42 Life",
+		"state": "TX",
+		"code": 123456,
+		"country": "United States",
+		"contact": {
+			"email": "hello@0x4447.email",
+			"phone_nr": "+1 (555) 555-6666"
+		}
+	},
+	"employs": {
+		"ceo": {
+			"individual": {
+				"first_name": "David",
+				"last_name": "Gatti"
+			},
+			"assistant": {
+				"first_name": "Very",
+				"last_name": "Helpful"
+			}
+		},
+		"management": [{
+			"first_name": "Good",
+			"last_name": "Leaders"
+		}]
 	}
 }
 ```
@@ -24,27 +42,52 @@ The goal of this tool is not just to handle nested JSON files like this...
 
 ```javascript
 {
-	first_name: {
+	company_name: {
 		type: 'string'
-	},
-	last_name: {
-		regexp: '[a-zA-Z]'
-	},
-	age: {
-		type: 'number'
 	},
 	address: {
 		street: {
 			type: 'string'
 		},
-		nr: {
-			type: 'number'
-		},
 		state: {
 			includes: ['AL', 'AK', 'AZ', 'AR', 'CA', 'CO', 'CT', 'DE', 'DC', 'FL', 'GA', 'HI', 'ID', 'IL', 'IN', 'IA', 'KS', 'KY', 'LA', 'ME', 'MD', 'MA', 'MI', 'MN', 'MS', 'MO', 'MT', 'NE', 'NV', 'NH', 'NJ', 'NM', 'NY', 'NC', 'ND', 'OH', 'OK', 'OR', 'PA', 'RI', 'SC', 'SD', 'TN', 'TX', 'UT', 'VT', 'VA', 'WA', 'WV', 'WI', 'WY']
 		},
+		code: {
+			type: 'number'
+		},
 		country: {
 			includes: ['United States', 'Canada']
+		},
+		contact: {
+			email: {
+				type: 'string'
+			},
+			phone_nr: {
+				type: 'string'
+			}
+		}
+	},
+	employs: {
+		ceo: {
+			individual: {
+				first_name: {
+					type: 'string'
+				},
+				last_name: {
+					type: 'string'
+				}
+			},
+			assistant: {
+				first_name: {
+					type: 'string'
+				},
+				last_name: {
+					type: 'string'
+				}
+			}
+		},
+		management: {
+			type: 'array'
 		}
 	}
 }

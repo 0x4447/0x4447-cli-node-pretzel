@@ -103,7 +103,7 @@ module.exports = main;
 //
 function type(data, test)
 {
-	if(typeof (data) === test)
+	if(typeof(data) === test)
 	{
 		return true;
 	}
