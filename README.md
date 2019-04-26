@@ -29,11 +29,7 @@ The goal of this tool is not just to handle nested JSON files like this...
 				"first_name": "Very",
 				"last_name": "Helpful"
 			}
-		},
-		"management": [{
-			"first_name": "Good",
-			"last_name": "Leaders"
-		}]
+		}
 	}
 }
 ```
@@ -85,9 +81,6 @@ The goal of this tool is not just to handle nested JSON files like this...
 					type: 'string'
 				}
 			}
-		},
-		management: {
-			type: 'array'
 		}
 	}
 }
